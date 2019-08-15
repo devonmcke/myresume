@@ -87,7 +87,9 @@ header,
 section {
   font-family: "Rationale", sans-serif;
   height: 100vh;
-  background: url(http://www.redtankstudio.com/website/images/slider1.jpg);
+  background: 
+      url(https://images.pexels.com/photos/33696/night-star-moon-big-bar.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+/*      url(http://www.redtankstudio.com/website/images/slider1.jpg);*/
   background-size: cover;
   background-position: center;
   display: flex;

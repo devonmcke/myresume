@@ -15,7 +15,7 @@ body.fixed-nav .site-wrap {
 
 header {
   text-align: center;
-  height: 50vh;
+  height: 50vw;
   background: bottom center no-repeat;
   background-size: cover;
   display: flex;
@@ -252,6 +252,10 @@ img {
 
 .card-img-3 {
   background-image: url("https://i.imgur.com/VEh1c1F.png");
+}
+
+.card-img-portfolio {
+  background-image: url("https://i.imgur.com/FZdYo6K.png");
 }
 
 .card-img-WIP {

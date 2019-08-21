@@ -253,6 +253,11 @@ img {
 .card-img-3 {
   background-image: url("https://i.imgur.com/VEh1c1F.png");
 }
+
+.card-img-WIP {
+  background-image: url("https://mondrian.mashable.com/2012%252F12%252F04%252F71%252Fexitfailwha.c7M.jpg%252F950x534__filters%253Aquality%252880%2529.jpg?signature=mV89ypeCoC0IJml-ZgqTf6CwEWE=");
+}
+
 .card-deets {
   position: relative;
   color: #fff;

@@ -237,12 +237,17 @@ img {
 .card-img:hover {
   opacity: 1;
 }
-.card-img-1 {
+
+.card-img-brite {
+  background-image: url("https://i.imgur.com/WvvEgPp.png");
+}
+
+.card-img-mic {
   background-image: url("https://i.imgur.com/6ng1jLT.jpg");
 }
 
-.card-img-2 {
-  background-image: url("https://i.imgur.com/0jn9cp9.png");
+.card-img-ashley {
+  background-image: url("https://i.imgur.com/HoC3UU2.png");
 }
 
 .card-img-3 {

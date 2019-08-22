@@ -1,395 +1,52 @@
-
-<!-- Todo: make the references mobil friendly, by chaging to vertical in mobile view -->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Devon McKenzie Resume</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brite Journal</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rationale"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&amp;display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <div>
-    <!-- partial:index.partial.html -->
-    <header id="home">
-      <h1>Devon <small>Fraser</small> McKenzie</h1>
-      <br><p></p>
-      <div class="row">
-       
+    <div id="black-background">
+      <div id="button-cont">
         <p>
-          <i class="fa fa-envelope-o" onclick="window.open('mailto:devonmcke@gmail.com?subject=Interested in working with you!');"></i> devonmcke@gmail.com
+          <input
+            type="button"
+            value="Send Email"
+            onclick="sendEmail();"
+            class="button"
+          />
+          <input
+            type="button"
+            value="Send Email"
+            onclick="inputEmail();"
+            class="button"
+          />
         </p>
-        <p>
-          <i class="fa fa-phone"></i> 951-331-8594
+      </div>
+      <textarea
+        rows="5"
+        cols="45"
+        oninput="textEval(this);"
+        placeholder="This is where you will type in your journal entry and as you type the background color will change"
+        autofocus
+      ></textarea>
+      <div id="emailPopup" class="popup">
+        <p style="text-align: center;">
+          Email: <input type="text" class="input-element" />
         </p>
-        
-
-        <p>
-          <i class="fa fa-user-circle" aria-hidden="true"></i> Junior Software
-          Engineer
-        </p>
       </div>
-      <!-- <p>
-        <i class="fa fa-university"></i> Self-taught
-      </p> -->
+    </div>
 
-      <p></p>
-      <div class="row">
-        <a href="https://youtu.be/RfiQYRn7fBg?t=11" target="_blank">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/Devonmcke123" target="_blank">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/devon-mckenzie/" target="_blank">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/devonmcke" target="_blank">
-          <i class="fa fa-github"></i>
-        </a>
-        <br><br><br><br><br><br>
-        
-        </div>
-        <br><br>
-      <div id="sticky">
-        <div><small>Learn more about me</small></div>
-        <i class="fa fa-angle-down" style="font-size:48px; color:white"></i>
-      </div>
-      </div>
-      
-   
-    </header>
-
-    <nav id="main">
-      <ul>
-        <li class="logo"><a>DM</a></li>
-        <li><a data-id="home">Home</a></li>
-        <li><a data-id="about">About</a></li>
-        <li><a data-id="projects">Projects</a></li>
-        <li><a data-id="references">References</a></li>
-      </ul>
-    </nav>
-
-    <section id="about">
-      <h1>About Me</h1>
-      <br>
-      <br>
-
-      <div class="row">
-        <img
-          src="https://media.giphy.com/media/qQh0DBncuFJwQ/giphy.gif"
-          class="img-responsive"
-          alt="Responsive image"
-          style="width:128px;height:128px;"
-          
-        />
-        
-       
-      </div>
-      <br><p>
-        <!-- <i class="fa fa-university"></i> Junior Web Developer with a -->
-        Skilled in React, JavaScript, HTML, CSS, JSON,<br>
-        express.JS and working on learning Vue.js <br /><br />
-        Master of gifs and Dad jokes
-        <!-- I'm new, but i'm hungry and with my strong sales work history, I have a
-        proven track record to learn fast <br />and perform at a high level.
-        Also, i'm highly skilled at Dad jokes. -->
-      </p>
-
-      <p>
-        <i class="fa fa-free-code-camp" aria-hidden="true"></i> Software
-        Engineer
-      </p>
-      <div class="row">
-        <a href="https://youtu.be/RfiQYRn7fBg?t=11" target="_blank">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/Devonmcke123" target="_blank">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/devon-mckenzie/" target="_blank">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/devonmcke" target="_blank">
-          <i class="fa fa-github"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects">
- 
-      <!-- 1st -->
-
-      
-      <div class="card">
-        <div
-          class="card-img  card-img-brite"
-          onclick="window.open('https://britejournal.netlify.com','_blank')"
-        ></div>
-        <div class="card-deets">
-          <div class="card-info card-title">
-            <h2>Brite Journal</h2>
-          </div>
-        </div>
-
-        <p class="card-info card-description">
-          <br />This is a Journal, that as you type, the backgorund becomes light enough to reveal a picture in the background. 
-          <br>
-          <br>
-          <a href="https://britejournal.netlify.com"><i class="fa fa-globe"></i> Website link</a>
-          <br>
-          <a href="https://github.com/devonmcke/BriteJournal"><i class="fa fa-github"></i> Github link</a>
-        </p>
-
-        <div class="card-data">
-          <div></div>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="card-img card-img-mic"
-          onclick="window.open('https://body-mic.netlify.com/','_blank')"
-        ></div>
-        <div class="card-deets">
-          <div class="card-info card-title">
-            <h2>Sound Board</h2>
-          </div>
-        </div>
-
-        <p class="card-info card-description">
-          <br />I have a friend who is a beat boxer. This is a sound board based on his music.
-          <br>
-        <br>
-        
-        <br>
-        <a href="https://body-mic.netlify.com/'"><i class="fa fa-globe"></i> Website link</a>
-        <br>
-        <a href="https://github.com/devonmcke/Body_mic"><i class="fa fa-github"></i>  Github link</a>
-        </p>
-        
-
-        <div class="card-data">
-          <div></div>
-        </div>
-      </div>
-      <div class="card">
-        <div
-          class="card-img  card-img-ashley"
-          onclick="window.open('https://ashleymckenzieresume.netlify.com/','_blank')"
-        ></div>
-        <div class="card-deets">
-          <div class="card-info card-title">
-            <h2>Resume Website</h2>
-          </div>
-        </div>
-
-        <p class="card-info card-description">
-          <br>I built this website for my wife, so she could apply to a few marketing positions.<br><br>
-        
-        <br>
-        <a href="https://ashleymckenzieresume.netlify.com/'"><i class="fa fa-globe"></i> Website link</a>
-        <br>
-        <a href="https://github.com/devonmcke/ashresume"><i class="fa fa-github"></i> Github link</a>
-        </p>
-
-        <div class="card-data">
-          <div></div>
-        </div>
-      </div>
-
-
-  
-
-      <!-- <h8>
-        <font color="white">There's a few more below</font>
-      </h8> -->
-    </section>
-    <!-- partial -->
-
-    <section id="projects">
-    
-      <!-- 1st -->
-      <div class="card">
-              <div class="card-img  card-img-3" onclick="window.open('https://clockitydock.netlify.com','_blank')"></div>
-              <div class="card-deets">
-                <div class="card-info card-title">
-                  <h2>Live Clock</h2>
-                </div>
-              </div>
-          
-              <p class="card-info card-description">
-                <br />In case you ever want to know what time it is.
-          
-                I had fun creating this, there are some issues I want to fix, but I
-                threw it up for the point of time. <br />
-                
-                <br>
-                <a href="https://clockitydock.netlify.com''"><i class="fa fa-globe"></i> Website link</a>
-                <br>
-                <a href="https://github.com/devonmcke/Clock"><i class="fa fa-github"></i> Github link</a>
-                </p>
-          
-              <div class="card-data">
-                <div></div>
-              </div>
-            </div>
-          <div class="card">
-            <div class="card-img  card-img-portfolio" onclick="window.open('https://www.youtube.com/embed/RfiQYRn7fBg','_blank')"></div>
-              <div class="card-deets">
-                <div class="card-info card-title">
-                  <h2>My Portfolio Website</h2>
-                </div>
-              </div>
-    
-        <p class="card-info card-description">
-          <br>This is the current webiste you are looking at.
-        <br>
-        <br>
-        <br>
-        <a href="https://devon-mckenzie-resume.netlify.com/"><i class="fa fa-globe"></i> This Website's link</a>
-        <br>
-        <a href="https://github.com/devonmcke/myresume"><i class="fa fa-github"></i> Github link</a>
-        
-        </p>
-        
-    
-        <div class="card-data">
-
-          <div></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img  card-img-WIP" onclick="window.open('https://www.youtube.com/embed/RfiQYRn7fBg','_blank')"></div>
-
-        <div class="card-deets">
-          <div class="card-info card-title">
-            <h2>Task WIP</h2>
-          </div>
-        </div>
-    
-        <p class="card-info card-description">
-          <br>I'm working on a project that will help you manage tasks. When I have that up and running, I will have it here
-          <br>
-    
-        <div class="card-data">
-          <div></div>
-        </div>
-      </div>
-    
-      
-    
-    
-        <h8>
-          <font color="white" >Have you clicked on the Twitter logo, yet?</font>
-        </h8>
-    </section>
-
-<!-- references -->
-
-    <section id="references">
-      <div class="pricing-grid">
-        <div class="plan plan1">
-          <img id="reference" src="https://media.licdn.com/dms/image/C4D03AQE_w4ZJiIcSvw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=IX-S9Eh0KwseSC_lvrM7UQBjig3cXIEjhbjeyqYgxng"
-            class="img-responsive" alt="Responsive image" />
-    
-          <p>
-            <br />
-            “Have absolutely loved working with Devon. I admire his ability to
-            jump in with both feet and always work hard. He is very approachable
-            and takes both positive and negative feedback extremely well. He's
-            fun to work with and a great example for everyone around him to aim
-            high and work hard to get there. “
-          </p>
-    
-          <div><h5>Kim Hemenway,</h5><br>Manager at NUVI</div>
-        </div>
-    
-        <div class="plan plan2">
-          <img id="reference" src="https://media.licdn.com/dms/image/C5603AQG3xXilFvbLwg/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=8jGypSBP9MFGvlYxivYgeYTcztY1qM3cfoM2XcT7jqo"
-            class="img-responsive" alt="Responsive image" />
-          <br />
-          <p>
-            “Devon has a zest and positive approach to work that is contagious
-            to everyone around him. Devon displays a consistent ability to
-            manage his time effectively. He brings a unique energy that helps
-            drive himself and his teammates in the right direction.”
-          </p>
-    <br>
-    <br>
-          <div><h5>Derek Johnson,</h5> <br> <h8>Team Lead at NUVI</h8> </div>
-        </div>
-    
-        <div class="plan plan3">
-          <img id="reference" src="https://media.licdn.com/dms/image/C4E03AQGo6cp061Zw4A/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=zn7ESuKgCJwQINlEsROuvUnk1wvB_C1xaFgj_buwU_g"
-            class="img-responsive" alt="Responsive image" />
-          <br />
-          <br />
-          <br />
-          <p>
-            “Devon is great to work with. His ability to think outside the box
-            for new ways to succeed has helped him and our company tremendously.
-            He is one of the most energetic people I know. “
-          </p>
-          <p></p>
-          <div><h5>Greg Larsen,</h5><br><h8>Operations at World Tech Academy</h8></div>
-        </div>
-      </div>
-    </section>
-<section id="contact">
-  <!-- contact me page -->
-  <div class="contact">
-    <br>
-  <h2>Interested in working together?</h2>
-  <br>
-
-  <button class="contact-button" onclick="window.open('mailto:devonmcke@gmail.com?subject=Interested in working with you!');">Email Me <i class="fa fa-envelope" aria-hidden="true"></i></button>
-  </div>
-  <br><br>
-  <div class="row">
-  
-    <p>
-      <i class="fa fa-envelope-o" onclick="window.open('mailto:devonmcke@gmail.com?subject=Interested in working with you!');"></i> devonmcke@gmail.com
-    </p>
-    <p>
-      <i class="fa fa-phone" a href="tel:951-331-8594"></i></i> 951-331-8594
-    </p>
-  
-  
-    <p>
-      <i class="fa fa-user-circle" aria-hidden="true"></i> Your next hire
-    </p>
-  </div>
-  <!-- <h2 color: white;><a href="tel:951-331-8594">Or, just call me at 951-331-8594</a></h2> -->
-</section>
-<!-- create a contact page -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
